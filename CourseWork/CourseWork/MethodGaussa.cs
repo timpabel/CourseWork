@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CourseWork
 {
-    public static class GaussianSolver
+    public class GaussianSolver
     {
-        public static double[] Solve(Matrix matrix)
+        public double[] Solve(Matrix matrix)
         {
             if (matrix.Rows != matrix.Columns - 1)
             {
