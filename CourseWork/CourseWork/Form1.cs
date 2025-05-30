@@ -81,7 +81,8 @@ namespace CourseWork
                 }
 
                 // Решаем систему
-                double[] solution = GaussianSolver.Solve(matrix);
+                GaussianSolver solver = new GaussianSolver();
+                double[] solution = solver.Solve(matrix);
 
                 // Выводим результаты
                 textBox_ans.Text = "Решение системы:\r\n";
